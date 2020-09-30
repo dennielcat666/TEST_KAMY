@@ -9,12 +9,52 @@ html(lang="ru")
 		link(rel="stylesheet", href="./css/index.css")
 	body
 		block body
-			.canvas.layout
-				header.header
-					.merd ozozon
-				main.main
-					block content
-				//- footer.footer
+			header.header
+				.layout
+					.header__top
+						.header__box
+							a.logo(href="#")
+								img(src="./img/logo.png", alt="Логотип")
+							.menu
+								-
+									menu_text = [
+										['Про уборки'],
+										['Оформить заказ'],
+										['О нас'],
+										['Отзывы'],
+										['F.A.Q.'],
+										['Акции']
+									]
+								each item in menu_text
+									a.menu__link(href="#")=item[0]
+						.header__box
+							.call +7 (495) 845-34-44
+							.logIn
+								a.logIn__btn(href="#") Войти
+					.header__middle
+						h1.header__title Уборка квартир в Москве и Подмосковье
+						.header__subtitle Идеальный порядок каждую неделю
+						.header__promo от 1590 руб
+					.header__form
+						form.form(action="")
+							label.form__label(for="") 
+								p.form__name Тип уборки
+								select.form__select(name="type")
+									option(value="Поддерживающая") Поддерживающая
+									option(value="Генеральная") Генеральная
+							label.form__label(for="") 
+								p.form__name Количество комнат
+								select.form__select(name="room")
+									option(value="1-комнатная") 1-комнатная
+									option(value="2-комнатная") 2-комнатная
+									option(value="3-комнатная") 3-комнатная
+									option(value="4-комнатная") 4-комнатная
+							button.form__btn(type="submit") Оформить заявку
+					.header__bottom
+						| Закажите уборку на завтра прямо сейчас и получите СКИДКУ 15%. <br> Промокод: #[span YESTERDAY]
+
+			main.main
+				block content
 			//- <script src="./js/bundle.js"></script>
 
 

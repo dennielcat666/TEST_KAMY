@@ -1,14 +1,21 @@
 @each $num in 100, 300, 400, 500, 700
 	@font-face 
-		font-family: 'Roboto'          
-		src: url('../fonts/Roboto#{$num}.woff2') format('woff2'), url('../fonts/Roboto#{$num}.woff') format('woff')
+		font-family: $primaryFont        
+		src: url('../fonts/#{$primaryFont}#{$num}.woff2') format('woff2'), url('../fonts/#{$primaryFont}#{$num}.woff') format('woff')
+		font-weight: $num
+		font-style: normal
+
+@each $num in 400
+	@font-face 
+		font-family: $secondFont        
+		src: url('../fonts/#{$secondFont}#{$num}.woff2') format('woff2'), url('../fonts/#{$secondFont}#{$num}.woff') format('woff')
 		font-weight: $num
 		font-style: normal
 
 @each $num in 700
 	@font-face 
-		font-family: 'Intro'          
-		src: url('../fonts/Intro#{$num}.woff2') format('woff2'), url('../fonts/Intro#{$num}.woff') format('woff')
+		font-family: $thirdFont      
+		src: url('../fonts/#{$thirdFont}#{$num}.woff2') format('woff2'), url('../fonts/#{$thirdFont}#{$num}.woff') format('woff')
 		font-weight: $num
 		font-style: normal
 
