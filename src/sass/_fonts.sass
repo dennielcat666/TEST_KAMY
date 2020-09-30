@@ -1,0 +1,15 @@
+@each $num in 100, 300, 400, 500, 700
+	@font-face 
+		font-family: 'Roboto'          
+		src: url('../fonts/Roboto#{$num}.woff2') format('woff2'), url('../fonts/Roboto#{$num}.woff') format('woff')
+		font-weight: $num
+		font-style: normal
+
+@each $num in 700
+	@font-face 
+		font-family: 'Intro'          
+		src: url('../fonts/Intro#{$num}.woff2') format('woff2'), url('../fonts/Intro#{$num}.woff') format('woff')
+		font-weight: $num
+		font-style: normal
+
+	 
