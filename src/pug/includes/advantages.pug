@@ -1,0 +1,15 @@
+.advantages
+	.layout.mod
+		h2.advantages__title.text-center Вы обязательно останетесь довольны, ведь мы...
+		div.cards
+			-
+				cards = [
+					['./img/card1.png', 'Используем только уникальные экологичные средства'],
+					['./img/card2.png', 'Отбираем только самых лучших клинеров'],
+					['./img/card3.png', 'Используем особо эффективную технологию уборки'],
+					['./img/card4.png', 'Очень любим наших клиентов и предоставляемскидки']
+				]
+			each item in cards
+				div.cards__item
+					.cards__img(style="background-image: url("+ item[0] + ")")
+					p.cards__title=item[1]

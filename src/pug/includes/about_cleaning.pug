@@ -1,0 +1,87 @@
+.layout.layout--narrow
+	.content-center.about-clean
+		h2 Про уборки
+		div
+			div
+				.clean-title
+					| Клинер приедет со всем необходимым для уборки. Стоимость уборки рассчитывается от количества комнат.
+				div
+					.clean-menu
+						p.clean-menu__tariff В каждый тариф входит уборка:
+						a.link.link__tariff(href="#") В комнате
+						a.link.link__tariff(href="#") На кухне
+						a.link.link__tariff(href="#") В ванной и туалете
+						a.link.link__tariff(href="#") В коридоре
+			.img-room
+				img(src="./img/room.png", alt="Комната")
+			.clean-info
+				.clean-info__name.blue-dot
+					| Поддерживающая уборка
+				.clean-info__name.yellow-dot
+					| Генеральная уборка
+	.content-center.type-clean
+		h2.type-clean__title Типы уборки
+		.flex.type-clean__block
+			-
+				paragraph = [
+					['Протираем мебель сверху донизу'],
+					['Чистим зеркала и стеклянные поверхности'],
+					['Пылесосим ковры'],
+					['Моем пол'],
+					['Убираем мусор'],
+					['Вычищаем пыль из углов'],
+					['Протираем плинтусы'],
+				]
+			.panel-shadow.for-indent.pannel-box
+				.type-clean__box
+					.text-center
+						span.type-clean__name.blue-dot Поддерживающая
+					.type-clean__panel
+						ul.type-clean__list
+							each item in paragraph
+								li.type-clean__list-item.check-mark=item
+				.price-box
+					.flex
+						.price-box__common
+							p.price-box__name Стоимость уборки:
+							p.price-box__subname во всех комнатах
+						div
+							p.price-box__price 1590 руб.
+					.text-center
+						a.price-box__btn(href="#") Оформить заявку
+			.panel-shadow.pannel-box
+				.type-clean__box
+					.text-center
+						span.type-clean__name.yellow-dot Генеральная
+					.type-clean__panel
+						ul.type-clean__list
+							each item in paragraph
+								li.type-clean__list-item.check-mark=item
+						div 
+							.type-clean__subname Генеральная:
+							ul.type-clean__sublist
+								li.type-clean__list-item.plus-mark Мойка радиатора отопления
+								li.type-clean__list-item.plus-mark Очистка выключателей и дверных ручек
+								li.type-clean__list-item.plus-mark Обеспыливание настенных светильников
+				.price-box
+					.flex
+						.price-box__common
+							p.price-box__name Стоимость уборки:
+							p.price-box__subname во всех комнатах
+						div
+							p.price-box__price 1990 руб.
+					.text-center
+						a.price-box__btn(href="#") Оформить заявку
+	.content-center.panel-shadow.counter.flex
+		div
+			p.counter__name Счетчик OZOZON
+			p.counter__date 23 июля 2017
+		.text-center
+			p.counter__value 16882
+			p.counter__text Квартир убрано
+		.text-center
+			p.counter__value 17
+			p.counter__text Сегодня в работе
+		.text-center
+			p.counter__value 2
+			p.counter__text Свободные клинеры

@@ -1,0 +1,85 @@
+.FAQ
+	background-color: #f8f8f8
+	margin-top: -1px
+
+	&__layout
+		max-width: 1120px
+
+	&__title
+		padding-top: 46px
+		flex: 0 1 auto
+
+.FAQ-tabs
+	display: flex
+	padding-top: 50px
+
+	&__title
+		position: relative
+		display: flex
+		align-items: center
+		padding: 47px 20px
+		background-color: #ffffff
+		background-repeat: no-repeat
+		background-position: 90% 50%
+		flex: 1 0 25%
+
+		&:not(:last-child)
+			margin-right: 42px
+			
+	&__text
+		// max-width: 120px
+		// width: 100%
+		// position: relative
+		width: 120px
+		font-size: 18px
+		margin-right: 53px
+		margin-left: 27px
+		font-weight: 500
+
+		// &::after
+		// 	content: ''
+		// 	max-width: 89px
+		// 	width: 100%
+		// 	height: 86px
+		// 	background-repeat: no-repeat
+		// 	background-position: center
+		// 	position: absolute
+		// 	left: 0px
+		// 	top: 50%
+		// 	margin: 0 auto
+
+	&__img
+		// max-width: 89px
+		width: 89px
+		height: 86px
+		background-repeat: no-repeat
+		background-position: center
+		margin: 0 auto
+
+	&__questions
+		margin-top: 42px
+		background-color: #ffffff
+		padding: 23px 111px
+
+	&__questions-list
+		max-width: 385px
+		width: 100%
+		line-height: 33px
+
+		&:not(:last-child)
+			margin-right: 65px
+
+	&__questions-items
+		border-bottom: 1px dashed #000000
+
+	&__questions-numCF
+		counter-reset: list 0
+
+	&__questions-numCS
+		counter-reset: list 6
+
+	&__counter
+		&::before
+			counter-increment: list
+			content: counter(list) ". "
+
