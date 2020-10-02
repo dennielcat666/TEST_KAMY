@@ -1,13 +1,11 @@
-div
+.reviews
 	.layout.mod
-		h2 Отзывы
-div
-	.layout.mod
-		div.owl-carousel.slaider
-			div.carousel-item
-				img(src="./img/cover.png", alt="")
-			//- div.carousel-item
-			//- 	img(src="./img/cover.png", alt="")
-			//- div.carousel-item
-			//- 	img(src="./img/cover.png", alt="")
-		a(href="#") Все отзывы
+		h2.text-center Отзывы
+.reviews__box
+	.layout.text-center
+		div.reviews__bg.content-center
+			div(class="owl-carousel slaider my-carousel" id="js-carousel-1")
+				div.carousel-item.content-center.reviews__img(style="background-image: url(./img/cover.png)")
+				div.carousel-item.content-center.reviews__img(style="background-image: url(./img/cover.png)")
+				div.carousel-item.content-center.reviews__img(style="background-image: url(./img/cover.png)")
+		a.reviews__link(href="#") Все отзывы
