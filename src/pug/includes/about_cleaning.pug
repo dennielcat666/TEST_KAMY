@@ -6,14 +6,25 @@
 				.clean-title
 					| Клинер приедет со всем необходимым для уборки. Стоимость уборки рассчитывается от количества комнат.
 				div
-					.clean-menu
+					.tabs__link.clean-menu
 						p.clean-menu__tariff В каждый тариф входит уборка:
-						a.link.link__tariff(href="#") В комнате
-						a.link.link__tariff(href="#") На кухне
-						a.link.link__tariff(href="#") В ванной и туалете
-						a.link.link__tariff(href="#") В коридоре
-			.img-room
-				img(src="./img/room.png", alt="Комната")
+						a.link.tabs__link-title.tabs__link-title--active.link__tariff(href="#") В комнате
+						a.link.tabs__link-title.link__tariff(href="#") На кухне
+						a.link.tabs__link-title.link__tariff(href="#") В ванной и туалете
+						a.link.tabs__link-title.link__tariff(href="#") В коридоре
+					.tabs__block.img-room
+						.tabs__block-content.visible
+							div.clean-menu__img(style="background-image: url(./img/room.png)")
+								//- img(src="./img/room.png", alt="Комната")
+						.tabs__block-content
+							div.clean-menu__img(style="background-image: url(./img/room1.png)")
+								//- img(src="./img/room.png", alt="Комната")
+						.tabs__block-content
+							div.clean-menu__img(style="background-image: url(./img/room2.png)")
+								//- img(src="./img/room.png", alt="Комната")
+						.tabs__block-content
+							div.clean-menu__img(style="background-image: url(./img/room3.png)")
+								//- img(src="./img/room.png", alt="Комната")
 			.clean-info
 				.clean-info__name.blue-dot
 					| Поддерживающая уборка

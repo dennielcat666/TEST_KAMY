@@ -10,6 +10,35 @@
 				.tabs__link-title.FAQ-tabs__title.panel-shadow(style="background-image: url(./img/section3.png)")
 					p.FAQ-tabs__text По персоналу
 			div.tabs__block.panel-shadow.FAQ-tabs__questions
+				div.tabs__block-content
+					.flex
+						div.FAQ-tabs__questions-list
+							-
+								questions = [
+									['Вопрос По оплате 1'],
+									['Вопрос По оплате 2'],
+									['Вопрос По оплате 3'],
+									['Вопрос По оплате 4'],
+									['Вопрос По оплате 5'],
+									['Вопрос По оплате 6']
+								]
+							ol.FAQ-tabs__questions-numCF
+								each item in questions
+									li.FAQ-tabs__counter
+										a.FAQ-tabs__questions-items(href="#")=item
+						div.FAQ-tabs__questions-list
+							-
+								questions = [
+									['Вопрос По оплате 7'],
+									['Вопрос По оплате 8'],
+									['Вопрос По оплате 9'],
+									['Вопрос По оплате 10'],
+									['Вопрос По оплате 11']
+								]
+							ol.FAQ-tabs__questions-numCS
+								each item in questions
+									li.FAQ-tabs__counter
+										a.FAQ-tabs__questions-items(href="#")=item
 				div.tabs__block-content.visible
 					.flex
 						div.FAQ-tabs__questions-list
@@ -34,6 +63,35 @@
 									['Выезжаете ли вы в область за МКАД?'],
 									['Что такое подписка и в чем ее преимущество?'],
 									['Чем вы не занимаетесь?']
+								]
+							ol.FAQ-tabs__questions-numCS
+								each item in questions
+									li.FAQ-tabs__counter
+										a.FAQ-tabs__questions-items(href="#")=item
+				div.tabs__block-content
+					.flex
+						div.FAQ-tabs__questions-list
+							-
+								questions = [
+									['Вопрос По персоналу 1'],
+									['Вопрос По персоналу 2'],
+									['Вопрос По персоналу 3'],
+									['Вопрос По персоналу 4'],
+									['Вопрос По персоналу 5'],
+									['Вопрос По персоналу 6']
+								]
+							ol.FAQ-tabs__questions-numCF
+								each item in questions
+									li.FAQ-tabs__counter
+										a.FAQ-tabs__questions-items(href="#")=item
+						div.FAQ-tabs__questions-list
+							-
+								questions = [
+									['Вопрос По персоналу 7'],
+									['Вопрос По персоналу 8'],
+									['Вопрос По персоналу 9'],
+									['Вопрос По персоналу 10'],
+									['Вопрос По персоналу 11']
 								]
 							ol.FAQ-tabs__questions-numCS
 								each item in questions
