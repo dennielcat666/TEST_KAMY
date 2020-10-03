@@ -1,48 +1,48 @@
 .reviews
-	padding-top: 68px
+    padding-top: 68px
 
-	&__box
-		background-image: url('../img/reviews_bg.png')
-		background-repeat: no-repeat
-		background-size: cover
-		background-position: 50% 0
-		padding-top: 85px
-		margin-top: 43px
-		padding-bottom: 78px
+    &__box
+        background-image: url('../img/reviews_bg.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: 50% 0
+        padding-top: 85px
+        margin-top: 43px
+        padding-bottom: 78px
 
-	&__bg
-		max-width: 905px
-		width: 100%
-		border-radius: 10px
-		background-color: #ffffff
-		padding-top: 31px
-		padding-bottom: 27px
-		position: relative
+    &__bg
+        max-width: 905px
+        width: 100%
+        border-radius: 10px
+        background-color: #ffffff
+        // padding-top: 31px
+        // padding-bottom: 27px
 
-	&__link
-		display: inline-block
-		margin-top: 29px
-		padding: 12px 53px
-		background-color: #ffffff
-		border-radius: 22px
+    &__link
+        display: inline-block
+        margin-top: 29px
+        padding: 12px 53px
+        background-color: #ffffff
+        border-radius: 22px
 
-	&__img
-		max-width: 790px
-		width: 100%
-		height: 313px
-		background-repeat: no-repeat
-		background-size: contain
+    &__img
+        padding: 31px 49px 21px 49px
+        // max-width: 790px
+        // width: 100%
+        // height: 313px
+        // background-repeat: no-repeat
+        // background-size: contain
 
 // .carousel-item
 // 	position: relative
 
 .justi-flex
-	display: flex
-	justify-content: center
+    display: flex
+    justify-content: center
 
 .my-carousel
-	// position: relative
-	margin: 0 auto
+    position: relative
+    margin: 0 auto
 
 .my-carousel .owl-prev span
     display: none
@@ -53,19 +53,20 @@
 .owl-prev::before
     content: url(../img/prev.png)
     position: absolute
-    top: 125px
-    left: -470px
+    top: 50%
+    transform: translate(-50%, -50%)
+    left: 0px
 
 .owl-next::before 
     content: url(../img/next.png)
     position: absolute
-    top: 125px
-    right: -470px
+    top: 50%
+    transform: translate(50%, -50%)
+    right: 0px
 
 .owl-nav
-    position: absolute
-    top: 0px
-    left: 50%
+    position: static
+    height: 0
 
 .owl-dots
     display: none
