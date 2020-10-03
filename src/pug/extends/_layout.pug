@@ -11,23 +11,23 @@ html(lang="ru")
 		header.header
 			.layout
 				.header__top
-					.header__box
-						a.logo(href="#")
-							img(src="./img/logo.png", alt="Логотип")
-						.menu
-							-
-								menu_text = [
-									['Про уборки'],
-									['Оформить заказ'],
-									['О нас'],
-									['Отзывы'],
-									['F.A.Q.'],
-									['Акции']
-								]
-							each item in menu_text
-								a.menu__link(href="#")=item[0]
-					.header__box
-						.header__phone +7 (495) 845-34-44
+					//- .header__box
+					a.logo(href="#")
+						img(src="./img/logo.png", alt="Логотип")
+					.menu
+						-
+							menu_text = [
+								['Про уборки'],
+								['Оформить заказ'],
+								['О нас'],
+								['Отзывы'],
+								['F.A.Q.'],
+								['Акции']
+							]
+						each item in menu_text
+							a.menu__link(href="#")=item[0]
+					.header__contact
+						a.header__phone(href="tel:+74958453444") +7 (495) 845-34-44
 						a.header__login(href="#") Войти
 				.header__middle
 					h1.header__title Уборка квартир в Москве и Подмосковье
