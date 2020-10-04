@@ -27,8 +27,7 @@ gulp dist
 
 ## GitHub Pages
 
-```bash
 https://dennielcat666.github.io/test_kamy/dist/index
-```
+
 
 
