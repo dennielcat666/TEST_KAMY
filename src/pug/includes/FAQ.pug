@@ -1,18 +1,18 @@
-.FAQ
-	.layout.FAQ__layout
+.faq
+	.layout.layout--faq
 		h2.text-center Часто задаваемые вопросы
-		div.tabs
-			div.tabs__link.FAQ-tabs
-				.tabs__link-title.FAQ-tabs__title.panel-shadow(style="background-image: url(./img/section1.png)")
-					p.FAQ-tabs__text По оплате
-				.tabs__link-title.tabs__link-title--active.FAQ-tabs__title.panel-shadow(style="background-image: url(./img/section2.png)")
-					p.FAQ-tabs__text По уборке
-				.tabs__link-title.FAQ-tabs__title.panel-shadow(style="background-image: url(./img/section3.png)")
-					p.FAQ-tabs__text По персоналу
-			div.tabs__block.panel-shadow.FAQ-tabs__questions
-				div.tabs__block-content
+		.js-tabs
+			.tabs__link.faq-tabs
+				.js-tabs-link-title.faq-tabs__title.panel-shadow(style="background-image: url(./img/section1.png)")
+					p.faq-tabs__text По оплате
+				.js-tabs-link-title.active.faq-tabs__title.panel-shadow(style="background-image: url(./img/section2.png)")
+					p.faq-tabs__text По уборке
+				.js-tabs-link-title.faq-tabs__title.panel-shadow(style="background-image: url(./img/section3.png)")
+					p.faq-tabs__text По персоналу
+			.tabs__block.panel-shadow.faq-tabs__questions
+				.js-tabs-block-content
 					.column
-						div.FAQ-tabs__questions-list
+						.faq-tabs__questions-list
 							-
 								questions = [
 									['Вопрос По оплате 1'],
@@ -22,11 +22,11 @@
 									['Вопрос По оплате 5'],
 									['Вопрос По оплате 6']
 								]
-							ol.FAQ-tabs__questions-numCF
+							ol.faq-tabs__questions-first
 								each item in questions
-									li.FAQ-tabs__counter
-										a.FAQ-tabs__questions-items(href="#")=item
-						div.FAQ-tabs__questions-list
+									li.faq-tabs__counter
+										a.faq-tabs__questions-items(href="#")=item
+						.faq-tabs__questions-list
 							-
 								questions = [
 									['Вопрос По оплате 7'],
@@ -35,13 +35,13 @@
 									['Вопрос По оплате 10'],
 									['Вопрос По оплате 11']
 								]
-							ol.FAQ-tabs__questions-numCS
+							ol.faq-tabs__questions-second
 								each item in questions
-									li.FAQ-tabs__counter
-										a.FAQ-tabs__questions-items(href="#")=item
-				div.tabs__block-content.visible
+									li.faq-tabs__counter
+										a.faq-tabs__questions-items(href="#")=item
+				.js-tabs-block-content.visible
 					.column
-						div.FAQ-tabs__questions-list
+						.faq-tabs__questions-list
 							-
 								questions = [
 									['Что входит в Ваши уборки?'],
@@ -51,11 +51,11 @@
 									['Клинеру нужны чистые тряпочки?'],
 									['Могу ли я дать клинеру чаевые? Должен ли я предупреждать вас об этом?']
 								]
-							ol.FAQ-tabs__questions-numCF
+							ol.faq-tabs__questions-first
 								each item in questions
-									li.FAQ-tabs__counter
-										a.FAQ-tabs__questions-items(href="#")=item
-						div.FAQ-tabs__questions-list
+									li.faq-tabs__counter
+										a.faq-tabs__questions-items(href="#")=item
+						.faq-tabs__questions-list
 							-
 								questions = [
 									['У меня большая квартира. Как её считать?'],
@@ -64,13 +64,13 @@
 									['Что такое подписка и в чем ее преимущество?'],
 									['Чем вы не занимаетесь?']
 								]
-							ol.FAQ-tabs__questions-numCS
+							ol.faq-tabs__questions-second
 								each item in questions
-									li.FAQ-tabs__counter
-										a.FAQ-tabs__questions-items(href="#")=item
-				div.tabs__block-content
+									li.faq-tabs__counter
+										a.faq-tabs__questions-items(href="#")=item
+				.js-tabs-block-content
 					.column
-						div.FAQ-tabs__questions-list
+						.faq-tabs__questions-list
 							-
 								questions = [
 									['Вопрос По персоналу 1'],
@@ -80,11 +80,11 @@
 									['Вопрос По персоналу 5'],
 									['Вопрос По персоналу 6']
 								]
-							ol.FAQ-tabs__questions-numCF
+							ol.faq-tabs__questions-first
 								each item in questions
-									li.FAQ-tabs__counter
-										a.FAQ-tabs__questions-items(href="#")=item
-						div.FAQ-tabs__questions-list
+									li.faq-tabs__counter
+										a.faq-tabs__questions-items(href="#")=item
+						.faq-tabs__questions-list
 							-
 								questions = [
 									['Вопрос По персоналу 7'],
@@ -93,7 +93,7 @@
 									['Вопрос По персоналу 10'],
 									['Вопрос По персоналу 11']
 								]
-							ol.FAQ-tabs__questions-numCS
+							ol.faq-tabs__questions-second
 								each item in questions
-									li.FAQ-tabs__counter
-										a.FAQ-tabs__questions-items(href="#")=item
+									li.faq-tabs__counter
+										a.faq-tabs__questions-items(href="#")=item

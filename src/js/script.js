@@ -1,6 +1,6 @@
 $(function (){
 	$('#js-carousel-1').owlCarousel({
-		items: 1, // А по-умолчанию 3
+		items: 1,
 		nav: true,
 		loop: true,
     });
@@ -8,9 +8,9 @@ $(function (){
 
 
 
-    $('.tabs').each(function(index) {
-        const $tabsLinksTitle = $(this).find('.tabs__link-title');
-        const $tabsBlocksContent = $(this).find('.tabs__block-content');
+    $('.js-tabs').each(function(index) {
+        const $tabsLinksTitle = $(this).find('.js-tabs-link-title');
+        const $tabsBlocksContent = $(this).find('.js-tabs-block-content');
 
 
         $tabsLinksTitle.each(function(index) {
@@ -19,8 +19,8 @@ $(function (){
     
                 
                 $tabsBlocksContent.removeClass('visible')
-                $tabsLinksTitle.removeClass('tabs__link-title--active');
-                $(this).addClass('tabs__link-title--active');
+                $tabsLinksTitle.removeClass('active');
+                $(this).addClass('active');
 
                 
                 $tabsBlocksContent.each(function (indexContent) {

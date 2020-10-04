@@ -5,25 +5,21 @@
 			div
 				.clean-title
 					| Клинер приедет со всем необходимым для уборки. Стоимость уборки рассчитывается от количества комнат.
-				div.tabs
+				.js-tabs
 					.tabs__link.clean-menu
 						p.clean-menu__tariff В каждый тариф входит уборка:
-						a.link.tabs__link-title.tabs__link-title--active.link__tariff(href="#") В комнате
-						a.link.tabs__link-title.link__tariff(href="#") На кухне
-						a.link.tabs__link-title.link__tariff(href="#") В ванной и туалете
-						a.link.tabs__link-title.link__tariff(href="#") В коридоре
+						button.link.js-tabs-link-title.active.link__tariff(type="submit") В комнате
+						button.link.js-tabs-link-title.link__tariff(type="submit") На кухне
+						button.link.js-tabs-link-title.link__tariff(type="submit") В ванной и туалете
+						button.link.js-tabs-link-title.link__tariff(type="submit") В коридоре
 					.tabs__block.img-room
-						.clean-menu__img.tabs__block-content.visible
+						.clean-menu__img.js-tabs-block-content.visible
 							img(src="./img/room.png")
-								//- img(src="./img/room.png", alt="Комната")
-						.clean-menu__img.tabs__block-content
-							//- div.clean-menu__img(style="background-image: url(./img/room1.png)")
+						.clean-menu__img.js-tabs-block-content
 							img(src="./img/room1.png", alt="Комната")
-						.clean-menu__img.tabs__block-content
-							//- div.clean-menu__img(style="background-image: url(./img/room2.png)")
+						.clean-menu__img.js-tabs-block-content
 							img(src="./img/room2.png", alt="Комната")
-						.clean-menu__img.tabs__block-content
-							//- div.clean-menu__img(style="background-image: url(./img/room3.png)")
+						.clean-menu__img.js-tabs-block-content
 							img(src="./img/room3.png", alt="Комната")
 			.clean-info
 				.clean-info__name.blue-dot
@@ -56,8 +52,7 @@
 						.price-box__common
 							p.price-box__name Стоимость уборки:
 							p.price-box__subname во всех комнатах
-						div
-							p.price-box__price 1590 руб.
+						p.price-box__price 1590 руб.
 					.text-center.text-md-left
 						a.price-box__btn(href="#") Оформить заявку
 			.panel-shadow.panel-box
@@ -79,12 +74,11 @@
 						.price-box__common
 							p.price-box__name Стоимость уборки:
 							p.price-box__subname во всех комнатах
-						div
-							p.price-box__price 1990 руб.
+						p.price-box__price 1990 руб.
 					.text-center.text-md-left
 						a.price-box__btn(href="#") Оформить заявку
 	.content-center.panel-shadow.counter
-		div.counter__col
+		.counter__col
 			p.counter__name Счетчик OZOZON
 			p.counter__date 23 июля 2017
 		.text-center.counter__col

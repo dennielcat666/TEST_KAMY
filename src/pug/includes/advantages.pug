@@ -1,7 +1,7 @@
 .advantages
-	.layout.mod
+	.layout.layout--advantages
 		h2.text-center Вы обязательно останетесь довольны, ведь мы...
-		div.cards
+		.cards
 			-
 				cards = [
 					['./img/card1.png', 'Используем только уникальные экологичные средства'],
@@ -10,6 +10,6 @@
 					['./img/card4.png', 'Очень любим наших клиентов и предоставляем скидки']
 				]
 			each item in cards
-				div.cards__item
+				.cards__item
 					.cards__img(style="background-image: url("+ item[0] + ")")
 					p.cards__title=item[1]

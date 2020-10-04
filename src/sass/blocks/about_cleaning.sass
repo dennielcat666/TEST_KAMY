@@ -27,7 +27,7 @@
 	padding: 66px 58px 51px
 	
 	@media #{$tablet}
-		flex-direction: column
+		display: block
 		padding: 40px 58px 40px
 
 	@media #{$small}
@@ -150,9 +150,15 @@
 .link
 	color: #666666
 	border-bottom: 1px dashed #666666
+	background-color: #fff
 
 	&__tariff
 		margin-right: 30px
+		cursor: pointer
+		transition: all 0.3s
+
+		&:hover
+			color: $blueColor
 
 		@media #{$small}
 			margin-right: 15px

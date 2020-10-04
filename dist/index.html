@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>OZOZON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="layout">
+        <div class="header__top"><a class="logo" href="#"><img src="./img/logo.png" alt="Логотип"></a>
+          <div class="menu"><a class="menu__link" href="#">Про уборки</a><a class="menu__link" href="#">Оформить заказ</a><a class="menu__link" href="#">О нас</a><a class="menu__link" href="#">Отзывы</a><a class="menu__link" href="#">F.A.Q.</a><a class="menu__link" href="#">Акции</a>
+          </div>
+          <div class="header__contact"><a class="header__phone" href="tel:+74958453444">+7 (495) 845-34-44</a><a class="header__login" href="#">Войти</a></div>
+        </div>
+        <div class="header__middle">
+          <h1 class="header__title">Уборка квартир в Москве и Подмосковье</h1>
+          <div class="header__subtitle">Идеальный порядок каждую неделю</div>
+          <div class="header__promo">от 1590 руб</div>
+        </div>
+        <div class="header__form">
+          <form class="form" action="">
+            <label class="form__label">
+              <p class="form__name">Тип уборки</p>
+              <select class="form__select" name="type">
+                <option value="Поддерживающая">Поддерживающая</option>
+                <option value="Генеральная">Генеральная</option>
+              </select>
+            </label>
+            <label class="form__label"> 
+              <p class="form__name">Количество комнат</p>
+              <select class="form__select" name="room">
+                <option value="1-комнатная">1-комнатная</option>
+                <option value="2-комнатная">2-комнатная</option>
+                <option value="3-комнатная">3-комнатная</option>
+                <option value="4-комнатная">4-комнатная</option>
+              </select>
+            </label>
+            <button class="form__btn" type="submit">Оформить заявку</button>
+          </form>
+        </div>
+        <div class="header__bottom">Закажите уборку на завтра прямо сейчас и получите СКИДКУ 15%. <br> Промокод: <span class="header__span">YESTERDAY</span></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="layout layout--narrow">
+        <div class="content-center about-clean">
+          <h2>Про уборки</h2>
+          <div>
+            <div>
+              <div class="clean-title">Клинер приедет со всем необходимым для уборки. Стоимость уборки рассчитывается от количества комнат.</div>
+              <div class="js-tabs">
+                <div class="tabs__link clean-menu">
+                  <p class="clean-menu__tariff">В каждый тариф входит уборка:</p>
+                  <button class="link js-tabs-link-title active link__tariff" type="submit">В комнате</button>
+                  <button class="link js-tabs-link-title link__tariff" type="submit">На кухне</button>
+                  <button class="link js-tabs-link-title link__tariff" type="submit">В ванной и туалете</button>
+                  <button class="link js-tabs-link-title link__tariff" type="submit">В коридоре</button>
+                </div>
+                <div class="tabs__block img-room">
+                  <div class="clean-menu__img js-tabs-block-content visible"><img src="./img/room.png"></div>
+                  <div class="clean-menu__img js-tabs-block-content"><img src="./img/room1.png" alt="Комната"></div>
+                  <div class="clean-menu__img js-tabs-block-content"><img src="./img/room2.png" alt="Комната"></div>
+                  <div class="clean-menu__img js-tabs-block-content"><img src="./img/room3.png" alt="Комната"></div>
+                </div>
+              </div>
+            </div>
+            <div class="clean-info">
+              <div class="clean-info__name blue-dot">Поддерживающая уборка</div>
+              <div class="clean-info__name yellow-dot">Генеральная уборка</div>
+            </div>
+          </div>
+        </div>
+        <div class="content-center type-clean">
+          <h2 class="text-center">Типы уборки</h2>
+          <div class="flex type-clean__block">
+            <div class="panel-shadow panel-box">
+              <div class="type-clean__box">
+                <div class="text-center"><span class="type-clean__name blue-dot">Поддерживающая</span></div>
+                <div class="type-clean__panel">
+                  <ul class="type-clean__list">
+                    <li class="type-clean__list-item check-mark">Протираем мебель сверху донизу</li>
+                    <li class="type-clean__list-item check-mark">Чистим зеркала и стеклянные поверхности</li>
+                    <li class="type-clean__list-item check-mark">Пылесосим ковры</li>
+                    <li class="type-clean__list-item check-mark">Моем пол</li>
+                    <li class="type-clean__list-item check-mark">Убираем мусор</li>
+                    <li class="type-clean__list-item check-mark">Вычищаем пыль из углов</li>
+                    <li class="type-clean__list-item check-mark">Протираем плинтусы</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="price-box">
+                <div class="flex">
+                  <div class="price-box__common">
+                    <p class="price-box__name">Стоимость уборки:</p>
+                    <p class="price-box__subname">во всех комнатах</p>
+                  </div>
+                  <p class="price-box__price">1590 руб.</p>
+                </div>
+                <div class="text-center text-md-left"><a class="price-box__btn" href="#">Оформить заявку</a></div>
+              </div>
+            </div>
+            <div class="panel-shadow panel-box">
+              <div class="type-clean__box">
+                <div class="text-center"><span class="type-clean__name yellow-dot">Генеральная</span></div>
+                <div class="type-clean__panel">
+                  <ul class="type-clean__list">
+                    <li class="type-clean__list-item check-mark">Протираем мебель сверху донизу</li>
+                    <li class="type-clean__list-item check-mark">Чистим зеркала и стеклянные поверхности</li>
+                    <li class="type-clean__list-item check-mark">Пылесосим ковры</li>
+                    <li class="type-clean__list-item check-mark">Моем пол</li>
+                    <li class="type-clean__list-item check-mark">Убираем мусор</li>
+                    <li class="type-clean__list-item check-mark">Вычищаем пыль из углов</li>
+                    <li class="type-clean__list-item check-mark">Протираем плинтусы</li>
+                  </ul>
+                  <div> 
+                    <div class="type-clean__subname">Генеральная:</div>
+                    <ul class="type-clean__sublist">
+                      <li class="type-clean__list-item plus-mark">Мойка радиатора отопления</li>
+                      <li class="type-clean__list-item plus-mark">Очистка выключателей и дверных ручек</li>
+                      <li class="type-clean__list-item plus-mark">Обеспыливание настенных светильников</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="price-box">
+                <div class="flex">
+                  <div class="price-box__common">
+                    <p class="price-box__name">Стоимость уборки:</p>
+                    <p class="price-box__subname">во всех комнатах</p>
+                  </div>
+                  <p class="price-box__price">1990 руб.</p>
+                </div>
+                <div class="text-center text-md-left"><a class="price-box__btn" href="#">Оформить заявку</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-center panel-shadow counter">
+          <div class="counter__col">
+            <p class="counter__name">Счетчик OZOZON</p>
+            <p class="counter__date">23 июля 2017</p>
+          </div>
+          <div class="text-center counter__col">
+            <p class="counter__value">16882</p>
+            <p class="counter__text">Квартир убрано</p>
+          </div>
+          <div class="text-center counter__col">
+            <p class="counter__value">17</p>
+            <p class="counter__text">Сегодня в работе</p>
+          </div>
+          <div class="text-center counter__col">
+            <p class="counter__value">2</p>
+            <p class="counter__text">Свободные клинеры</p>
+          </div>
+        </div>
+      </div>
+      <div class="advantages">
+        <div class="layout layout--advantages">
+          <h2 class="text-center">Вы обязательно останетесь довольны, ведь мы...</h2>
+          <div class="cards">
+            <div class="cards__item">
+              <div class="cards__img" style="background-image: url(./img/card1.png)"></div>
+              <p class="cards__title">Используем только уникальные экологичные средства</p>
+            </div>
+            <div class="cards__item">
+              <div class="cards__img" style="background-image: url(./img/card2.png)"></div>
+              <p class="cards__title">Отбираем только самых лучших клинеров</p>
+            </div>
+            <div class="cards__item">
+              <div class="cards__img" style="background-image: url(./img/card3.png)"></div>
+              <p class="cards__title">Используем особо эффективную технологию уборки</p>
+            </div>
+            <div class="cards__item">
+              <div class="cards__img" style="background-image: url(./img/card4.png)"></div>
+              <p class="cards__title">Очень любим наших клиентов и предоставляем скидки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="layout layout--faq">
+          <h2 class="text-center">Часто задаваемые вопросы</h2>
+          <div class="js-tabs">
+            <div class="tabs__link faq-tabs">
+              <div class="js-tabs-link-title faq-tabs__title panel-shadow" style="background-image: url(./img/section1.png)">
+                <p class="faq-tabs__text">По оплате</p>
+              </div>
+              <div class="js-tabs-link-title active faq-tabs__title panel-shadow" style="background-image: url(./img/section2.png)">
+                <p class="faq-tabs__text">По уборке</p>
+              </div>
+              <div class="js-tabs-link-title faq-tabs__title panel-shadow" style="background-image: url(./img/section3.png)">
+                <p class="faq-tabs__text">По персоналу</p>
+              </div>
+            </div>
+            <div class="tabs__block panel-shadow faq-tabs__questions">
+              <div class="js-tabs-block-content">
+                <div class="column">
+                  <div class="faq-tabs__questions-list">
+                    <ol class="faq-tabs__questions-first">
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 1</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 2</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 3</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 4</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 5</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 6</a></li>
+                    </ol>
+                  </div>
+                  <div class="faq-tabs__questions-list">
+                    <ol class="faq-tabs__questions-second">
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 7</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 8</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 9</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 10</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По оплате 11</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="js-tabs-block-content visible">
+                <div class="column">
+                  <div class="faq-tabs__questions-list">
+                    <ol class="faq-tabs__questions-first">
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Что входит в Ваши уборки?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Обязательно ли мое присутствие?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Чем вы убираетесь?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Что нужно предоставить клинеру для уборки?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Клинеру нужны чистые тряпочки?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Могу ли я дать клинеру чаевые? Должен ли я предупреждать вас об этом?</a></li>
+                    </ol>
+                  </div>
+                  <div class="faq-tabs__questions-list">
+                    <ol class="faq-tabs__questions-second">
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">У меня большая квартира. Как её считать?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Делаете ли вы уборку в выходные?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Выезжаете ли вы в область за МКАД?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Что такое подписка и в чем ее преимущество?</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Чем вы не занимаетесь?</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="js-tabs-block-content">
+                <div class="column">
+                  <div class="faq-tabs__questions-list">
+                    <ol class="faq-tabs__questions-first">
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 1</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 2</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 3</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 4</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 5</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 6</a></li>
+                    </ol>
+                  </div>
+                  <div class="faq-tabs__questions-list">
+                    <ol class="faq-tabs__questions-second">
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 7</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 8</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 9</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 10</a></li>
+                      <li class="faq-tabs__counter"><a class="faq-tabs__questions-items" href="#">Вопрос По персоналу 11</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="layout">
+          <h2 class="text-center">Отзывы</h2>
+        </div>
+      </div>
+      <div class="reviews__box">
+        <div class="layout text-center">
+          <div class="reviews__bg content-center">
+            <div class="owl-carousel my-carousel" id="js-carousel-1"><img class="carousel-item content-center reviews__img" src="./img/cover.png"><img class="carousel-item content-center reviews__img" src="./img/cover.png"><img class="carousel-item content-center reviews__img" src="./img/cover.png"></div>
+          </div><a class="reviews__link" href="#">Все отзывы</a>
+        </div>
+      </div>
+    </main><a class="call-btn" href="#" style="background-image: url(./img/call-btn.png)"></a><script src="./js/bundle.js"></script>
+  </body>
+</html>

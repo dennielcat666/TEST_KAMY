@@ -23,8 +23,7 @@ gulp.task('dev',  function dev (cb) {
     
     gulp.src('./src/js/*.js')
         .pipe(babel({
-            presets: ['@babel/env'],
-            plugins: ["@babel/plugin-transform-modules-commonjs"],
+            presets: ['@babel/env']
         }))
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest('./dev/js'));
@@ -63,7 +62,6 @@ gulp.task('dist',  function dist (cb) {
     
     gulp.src('./src/sass/index.sass')
         .pipe(sass().on('error', sass.logError))
-        /* .pipe(concat('main.css')) */
         .pipe(uglifycss())
         .pipe(gulp.dest('./dist/css'));
 
