@@ -13,25 +13,25 @@
 						a.link.tabs__link-title.link__tariff(href="#") В ванной и туалете
 						a.link.tabs__link-title.link__tariff(href="#") В коридоре
 					.tabs__block.img-room
-						.tabs__block-content.visible
-							div.clean-menu__img(style="background-image: url(./img/room.png)")
+						.clean-menu__img.tabs__block-content.visible
+							img(src="./img/room.png")
 								//- img(src="./img/room.png", alt="Комната")
-						.tabs__block-content
-							div.clean-menu__img(style="background-image: url(./img/room1.png)")
-								//- img(src="./img/room.png", alt="Комната")
-						.tabs__block-content
-							div.clean-menu__img(style="background-image: url(./img/room2.png)")
-								//- img(src="./img/room.png", alt="Комната")
-						.tabs__block-content
-							div.clean-menu__img(style="background-image: url(./img/room3.png)")
-								//- img(src="./img/room.png", alt="Комната")
+						.clean-menu__img.tabs__block-content
+							//- div.clean-menu__img(style="background-image: url(./img/room1.png)")
+							img(src="./img/room1.png", alt="Комната")
+						.clean-menu__img.tabs__block-content
+							//- div.clean-menu__img(style="background-image: url(./img/room2.png)")
+							img(src="./img/room2.png", alt="Комната")
+						.clean-menu__img.tabs__block-content
+							//- div.clean-menu__img(style="background-image: url(./img/room3.png)")
+							img(src="./img/room3.png", alt="Комната")
 			.clean-info
 				.clean-info__name.blue-dot
 					| Поддерживающая уборка
 				.clean-info__name.yellow-dot
 					| Генеральная уборка
 	.content-center.type-clean
-		h2.type-clean__title Типы уборки
+		h2.text-center Типы уборки
 		.flex.type-clean__block
 			-
 				paragraph = [
@@ -43,7 +43,7 @@
 					['Вычищаем пыль из углов'],
 					['Протираем плинтусы'],
 				]
-			.panel-shadow.for-indent.pannel-box
+			.panel-shadow.panel-box
 				.type-clean__box
 					.text-center
 						span.type-clean__name.blue-dot Поддерживающая
@@ -58,9 +58,9 @@
 							p.price-box__subname во всех комнатах
 						div
 							p.price-box__price 1590 руб.
-					.text-center
+					.text-center.text-md-left
 						a.price-box__btn(href="#") Оформить заявку
-			.panel-shadow.pannel-box
+			.panel-shadow.panel-box
 				.type-clean__box
 					.text-center
 						span.type-clean__name.yellow-dot Генеральная
@@ -81,7 +81,7 @@
 							p.price-box__subname во всех комнатах
 						div
 							p.price-box__price 1990 руб.
-					.text-center
+					.text-center.text-md-left
 						a.price-box__btn(href="#") Оформить заявку
 	.content-center.panel-shadow.counter
 		div.counter__col
@@ -93,6 +93,6 @@
 		.text-center.counter__col
 			p.counter__value 17
 			p.counter__text Сегодня в работе
-		.text-center.col.counter__col
+		.text-center.counter__col
 			p.counter__value 2
 			p.counter__text Свободные клинеры

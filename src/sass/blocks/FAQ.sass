@@ -1,8 +1,12 @@
 .FAQ
 	background-color: #f8f8f8
 	margin-top: -1px
-	padding-bottom: 68px
 	padding-top: 46px
+	padding-bottom: 68px
+
+	@media #{$mobile}
+		padding-top: 30px
+		padding-bottom: 40px
 
 	&__layout
 		max-width: 1120px
@@ -10,6 +14,12 @@
 .FAQ-tabs
 	display: flex
 	padding-top: 50px
+
+	@media #{$tablet}
+		flex-direction: column
+
+	@media #{$mobile}
+		padding-top: 30px
 
 	&__title
 		position: relative
@@ -24,6 +34,10 @@
 
 		&:not(:last-child)
 			margin-right: 42px
+
+			@media #{$tablet}
+				margin-right: 0
+				margin-bottom: 10px
 			
 	&__text
 		// max-width: 120px
@@ -60,6 +74,9 @@
 		background-color: #ffffff
 		padding: 23px 111px
 
+		@media #{$tablet}
+			padding: 23px 50px
+
 	&__questions-list
 		max-width: 385px
 		width: 100%
@@ -67,6 +84,10 @@
 
 		&:not(:last-child)
 			margin-right: 65px
+
+			@media #{$small}
+				margin-right: 0
+				font-size: 14px
 
 	&__questions-items
 		border-bottom: 1px dashed #000000
@@ -81,6 +102,13 @@
 		&::before
 			counter-increment: list
 			content: counter(list) ". "
+
+.column
+	display: flex
+
+	@media #{$tablet}
+		flex-direction: column
+
 
 // .tabs__link-title--active
 // 	color: #62d5e9
